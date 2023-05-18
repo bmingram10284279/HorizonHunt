@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <!-- Scaling the content to fit the screen size of the window the content is being viewed on -->
+	<title>Horizon Hunt</title>
+    <link rel="shortcut icon" type="image/png" href="_images/favicon.png">
+</head>
+
+    <header>
+            <!-- Adding logo with screen reader text of the business name and logo, as well as defining how large the SVG vector logo should be -->
+            <h1>Horizon Hunt</h1>
+<!-- =========== NAVIGATION ============== -->
+	   <nav>
+		  <ul>
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="discover.html" title="Discover Page">Discover</a></li>
+            <li><a href="about.html" title="About Us">About</a></li>
+			<li><a href="contact.html" title="Contact Us">Contact Us</a></li>
+            <li><a href="login.html" title="Login In Page">Sign In | Sign Up</a></li>
+		  </ul>
+	   </nav>
+    </header>
+<!-- ========= CONTENT AREA ============ -->	
+<main>
+	<article>
+		<section>
+                <form action="action_page.php" method="post"> <!-- Popup Page for Login Details -->
+                <div class="login-box">
+                    
+                <h2>Your Account</h2>
+                <h3> Sign In Or Create A New Account</h3>
+                <label for="username"><b>Email Address</b></label>
+                <input type="text" placeholder="Enter Email Address" name="uname" required>
+                <!-- User to enter registered username or email address to login -->
+
+                <br><br>
+      
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <!-- User to enter corresponding password to login -->
+
+                <br><br>
+      
+                <button type="submit">Login</button>
+                <input type="checkbox" unchecked="unchecked" name="remember"> Save Details?
+                <!-- User to click login in button and to select if they wish their details to be saved to their browsers cookies and autofilled for next visit -->
+        
+                <br><br>
+        
+                <button type="submit">Create New Account</button>
+                <!-- Button to take users to fill out form to create account for Horizon Hunt if they do not already have an account -->
+                
+                <br><br>
+                    
+                <a href="#">Forgot password?</a> <!-- Creating false hyperlink for user to reset their password -->
+                </div>
+                </form>
+            
+                <div class="login-image">
+                <img src="_images/loginbackground.jpeg" alt="Login Background" width="13189" height="5276" style="max-width:100%; height: auto">
+                <!-- Image will be on the right side and text to the left -->
+                </div>
+		</section>
+	</article>
+</main>
+<!-- ============= FOOTER ================ -->
+    <footer class="sticky-footer">
+        <p>&copy; 2023 Horizon Hunt</p>
+		<p><a href="_docs/sample_doc.pdf">Privacy Policy</a></p>
+        <address>
+			Contact us at: <a href="mailto:email@horizionhunt.com">email@horizonhunt.com</a>
+			Find us at: 2 Bradford Street, Mount Lawley WA 6050
+		</address>
+	</footer>
+</html>
